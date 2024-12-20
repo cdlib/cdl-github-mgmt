@@ -6,6 +6,7 @@ Options
 - Re-use a pre-existing GitHub account
 - Create a new GitHub account dedicated for my work at CDL
 - Create a separate GitHub account in order to administer a GitHub organization
+- Create a [machine user](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#machine-users)
 
 ## What email(s) should I associate with my GitHub account
 
@@ -56,3 +57,19 @@ Options
 Options
 - GraphQL
 - API
+
+## Can we use GitHub Codespaces?
+
+## Best Practices
+
+### Developer Best Practices
+
+#### SSH Keys for GitHub
+
+#### Forking CDL repositories
+
+#### Signed Commits
+
+### Organization Admin Best Practices
+
+### Product/Project Management Best Practices
