@@ -122,18 +122,48 @@ Options
 - AWS CodePipeline
 - Jenkins
 
-## Git Authentication vs GitHub Authentication
-
 ## When should I authorize an application to access my GitHub repo?
 
 ## When should I create an Access Token?
 
+- Access tokens can be created to authorize a github client (as a login credential)
+- Access tokens can be used to authorize a script to perform git operations
+- Access tokens can be used to authorize a program to make GitHub api calls
+
 ## What type of access token should I use?
 
-Options
-- Classic (`ghp...`)
-- Fine-grained (`github_pat_...`)
+Access token creation is configured under **Settings/Developer Settings/Personal Access Tokens**.
+
+If the creator of an access token is not a GitHub Organization owner, the token must be approved by a GitHub Organization Owner before it can be used.
+
+An organization owner can revoke fine-graned tokens that have been granted organization access rights.
+
+### Options
+- Classic token (`ghp...`)
+  - can be configured with/without an expiration
+  - permission scopes are too broad and generally grant more rights than is desireable.
+- Fine-grained Access Token (`github_pat_...`)
+  - users are discourged from creating one without an expiration
+  - access rights can be scoped
+    - to particular github apis
+    - to particular repositories
+    - to a particular organization
+
+> [!NOTE]
+> At this time, CDL recommends the use of fine-grained access tokens
+
+### Access Token Alternatives
 - SSH keys
+- GitHub Apps
+
+## GitHub Apps
+
+We should be very selecitve about the apps that are approved at an Org level.
+
+This is the primary mechanism that we use to enable AWS Code Build/Pipeline tools to access GitHub events.
+
+<img width="1096" alt="image" src="https://github.com/user-attachments/assets/b3c46347-d978-4cdc-99d1-cbf949f0798d" />
+
 
 ## How can I access the GitHub api?
 
