@@ -40,6 +40,8 @@ Options
 - AWS CodePipeline
 - Jenkins
 
+## Git Authentication vs GitHub Authentication
+
 ## When should I authorize an application to access my GitHub repo?
 
 ## When should I create an Access Token?
