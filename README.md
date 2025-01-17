@@ -2,14 +2,80 @@
 
 ## What GitHub Account Should I use for my work at CDL?
 
-Options
+GitHub accounts are stongly tied to individual emails.  
+
+The use of shared/administrative accounts in actively discouraged by GitHub through multi-factor authentication policies.
+
+GitHub organization policies should be created with an assumption that multiple individual users will adminster policies.  These users should be removed from the GitHub organization when the users separate from CDL.
+
+### Options
 - Re-use a pre-existing GitHub account
+  - Many CDL developers have chosen this option in order to showcase a portfolio of work before and after joining CDL. 
 - Create a new GitHub account dedicated for my work at CDL
+  - Many CDL staff have chosen this option as well. 
 - Create a separate GitHub account in order to administer a GitHub organization
+  - Our CDL Systems Adminstrators have chosen this option for administering GitHub.
+  - This requires the use of a secondary email or an email alias.
+ 
+### Server-based deployments 
 - Create a [machine user](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#machine-users)
 
 ## What email(s) should I associate with my GitHub account
 
+A GitHub account can be configured with multiple email addresses.  
+
+We recommend that you associate your CDL email address with the GitHub account that you use for your work at CDL.
+
+## Performing Git operations using my GitHub account
+
+Many Git/GitHub operations can be performed within the GitHub web interface.
+- Create issues
+- Comment on issues
+- Create pull requests
+- Merge pull requests
+- View Code
+- Edit Code - this option is ok for simple edits to a single file
+
+For work that you perform on your desktop or on a CDL server, you will likely need to authorize a **git client** to use your GitHub credentials.
+- pull code from a public repo - no authorization is needed
+- pull code from a private repo - authorization is needed
+- push code to a repo (public or private) - authorization is needed
+
+### Examples of a Git Client
+- GitHub desktop
+- VSCode
+- `git` command line tool
+
+### Authorizing a Git Client
+> [!NOTE]
+> GitHub no longer allows you to use your GitHub password to authorize a git client.
+
+Authorization Options
+- #### GitHub Desktop
+  - in this instance, the url to your repo will look like `https://github.com...` 
+  - when you attempt to clone a private repository, GitHub desktop will prompt you for authentication
+  - GitHub desktop will create an authentication key for you 
+- #### `git` command line client
+  - in this instance, the url to your repo will look like `https://github.com...` 
+  - when you attempt to clone a private repository, the git tool will prompt you for a username/password
+    - the username does not matter
+    - for the password, provide a GitHub personal access token
+      - GitHub fine-grained personal access tokens have an expiration date and will require periodic regeneration
+- #### Configure an ssh key
+  - in this instance, the url to your repo will look like `git@github.com...`
+  - from **your desktop**, you must create an ssh key using a command line tool such as `ssh-keygen` and name it something like `~/.ssh/github_rsa`
+  - you must load your PUBLIC ssh key to your GitHub account
+    - Settings / SSH and GPG Keys
+    - Note that SSH keys have no expiration on GitHub
+  - you must add the following to your `~/.ssh/config`
+  - when connecting to a CDL server, it is recommended that you forward your ssh credentials to the server rather than duplicating your ssh key on the server.
+    - `ssh -A` 
+```
+Host github.com
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/github_rsa
+``` 
 ## What Type of Billing Plan should my GitHub account have?
 
 GitHub offers 3 types of plans
