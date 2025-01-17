@@ -53,8 +53,8 @@ For work that you perform on your desktop or on a CDL server, you will likely ne
 Authorization Options
 - #### GitHub Desktop
   - in this instance, the url to your repo will look like `https://github.com...` 
-  - when you attempt to clone a private repository, GitHub desktop will prompt you for authentication
-  - GitHub desktop will create an authentication key for you 
+  - when you attempt to clone a private repository, GitHub desktop will prompt you for authentication on GitHub.com
+  - GitHub desktop relies on an active web connection to GitHub.com
 - #### `git` command line client
   - in this instance, the url to your repo will look like `https://github.com...` 
   - when you attempt to clone a private repository, the git tool will prompt you for a username/password
@@ -75,7 +75,23 @@ Host github.com
 	HostName github.com
 	User git
 	IdentityFile ~/.ssh/github_rsa
-``` 
+```
+
+### GitHub Access Tokens vs SSH Keys
+
+- GitHub Access Tokens
+  - Access rights can be revoked at any time 
+  - Can be configured with an expiration
+  - Access rights can be scoped to particular behaviors
+  - Can perform git operations (clone/push/pull)
+  - Can perform GitHub API operations
+- SSH Keys
+  - Access rights can be revoked at any time
+  - Cannot be configured with an expiration
+  - Can be "forwarded" to a server
+  - Can perform git operations (clone/push/pull)
+  - Cannot perform GitHub API operations
+
 ## What Type of Billing Plan should my GitHub account have?
 
 GitHub offers 3 types of plans
