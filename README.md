@@ -47,8 +47,9 @@ Options
 ## What type of access token should I use?
 
 Options
-- Classic
-- Fine-grained
+- Classic (`ghp...`)
+- Fine-grained (`github_pat_...`)
+- SSH keys
 
 ## How can I access the GitHub api?
 
