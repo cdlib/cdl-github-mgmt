@@ -179,9 +179,7 @@ Options
 
 ### Developer Best Practices
 
-#### SSH Keys for GitHub
-
-#### Access Tokens
+### GitHub Notifications Best Practices
 
 #### Forking CDL repositories
 
