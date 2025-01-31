@@ -44,7 +44,7 @@ For work that you perform on your desktop or on a CDL server, you will likely ne
 ### Examples of a Git Client
 - GitHub desktop
 - VSCode
-- `git` command line tool
+- [`git`](https://cli.github.com) command line tool
 
 ### Authorizing a Git Client
 > [!NOTE]
