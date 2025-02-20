@@ -24,7 +24,11 @@ GitHub organization policies should be created with an assumption that multiple 
 
 A GitHub account can be configured with multiple email addresses.  
 
-We recommend that you associate your CDL email address with the GitHub account that you use for your work at CDL.
+We recommend that you associate your UCOP email address with the GitHub account that you use for your work at CDL.
+
+## Multi-factor authentication (MFA) Requirement
+All CDL Github users are required to enable MFA.  These can be configured in your [account security settings](https://github.com/settings/security).   
+It is recommended to enable (2) two-factor methods.  Selecting 2 methods provides a backup method if one method is unavailable.  It is not recommended to use SMS as this is an insecure method.  
 
 ## Performing Git operations using my GitHub account
 
