@@ -1,5 +1,8 @@
 # Information on how Github is administered and managed within CDL
 
+> [!Note]
+> This information to move into the CDL User Guides Repo that is maintained by IAS once the GitHub working group has this document in a more final state.
+
 ## What GitHub Account Should I use for my work at CDL?
 
 GitHub accounts are stongly tied to individual emails.  
