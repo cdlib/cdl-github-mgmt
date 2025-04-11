@@ -115,8 +115,10 @@ Most CDL users have been able to qualify for a free pro account using [GitHub fo
 ## What is a GitHub Organization?  How does CDL utilize GitHub Organizations?
 
 ## I need to create a new repo, which organization should I use?
+(Joe) I believe this is program dependent and by project right?
 
 ## I need to create a new repo, should it be public or private?
+(Joe) Wondering if this should be private by default and public when it needs to be public.
 
 ## What content should *never* be stored it git (even in a private repo?)
 
@@ -195,3 +197,5 @@ Options
 ### Organization Admin Best Practices
 
 ### Product/Project Management Best Practices
+
+## What is our stance with CoPilot?  ###
