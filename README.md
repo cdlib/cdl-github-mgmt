@@ -212,3 +212,6 @@ Most teams at CDL utilize Github Project Boards to manage agile development.  Pr
 
 ## How do our teams use CoPilot?  ###
 CDL Users that have Pro accounts via Github Education, were able to request Github CoPilot for free.  As of June 1, 2026 [Github transitioned CoPilot to usage-based billing](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/).  As a result of that, Github [paused signups for CoPilot](https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/).  Users which already have CoPilot can continue to use it until they reach their usage limit each month.  Teams find Github CoPilot beneficial utilizing within the browser, helping to write unit tests, review PRs, and embed within their IDE of choice. 
+
+## Github is a dynamic platform.  How can I stay up-to-date with changes?
+Read the [Github Blog](https://github.blog/) for news and updates and [subscribe to the Github Newsletter](https://github.com/newsletter/) for developer updates. 
