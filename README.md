@@ -197,5 +197,9 @@ Options
 ### Organization Admin Best Practices
 
 ### Product/Project Management Best Practices
+Most teams at CDL utilize Github Project Boards to manage agile development.  Project Boards are very flexible, supporting many views and configurations to track work across a single or multiple repositories. They are typically set to private since they track internal work.  Examples of public Github Project Boards can be found here: 
+- [CDLUC3 Public Projects](https://github.com/orgs/CDLUC3/projects)
+- [ROR Community Roadmap](https://github.com/orgs/ror-community/projects/17)
 
-## What is our stance with CoPilot?  ###
+## How do our teams use CoPilot?  ###
+CDL Users that have Pro accounts via Github Education, were able to request Github CoPilot for free.  As of June 1, 2026 [Github transitioned CoPilot to usage-based billing](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/).  As a result of that, Github [paused signups for CoPilot](https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/).  Users which already have CoPilot can continue to use it until they reach their usage limit each month.  Teams find Github CoPilot beneficial utilizing within the browser, helping to write unit tests, review PRs, and embed within their IDE of choice. 
