@@ -106,13 +106,14 @@ GitHub offers 3 types of plans
 - Pro
 - Enterprise
 
-Due to cost, CDL does not have an enterprise plan.
-
+Due to cost, CDL does not have an enterprise plan. 
 Most CDL users have been able to qualify for a free pro account using [GitHub for Education](https://github.com/education) benefits.
 
-- [ ] Create a confluence page describing how to apply for these benefits
-
 ## What is a GitHub Organization?  How does CDL utilize GitHub Organizations?
+Github organizations are for teams operating shared code and policies. Each CDL program typically has it's own organization.  
+
+## What is a Github Team?
+Within each organization there are teams. A GitHub team is a subgroup inside an organization used to manage repo-level access.  A member can belong to many teams.
 
 ## I need to create a new repo, which organization should I use?
 (Joe) I believe this is program dependent and by project right?
@@ -121,26 +122,31 @@ Most CDL users have been able to qualify for a free pro account using [GitHub fo
 (Joe) Wondering if this should be private by default and public when it needs to be public.
 
 ## What content should *never* be stored it git (even in a private repo?)
-
-## What collaboration settings are recommended for my new GitHub repo?
+Secrets and credentials (API keys & tokens, passwords, private keys, connection strings)
+Sensitive Data (env vars, configuration files with secrets, PII date)
 
 ## What CI/CD tools should I utilize with my repository?
-
 Options
 - GitHub actions
 - AWS CodePipeline
 - Jenkins
 
 ## When should I authorize an application to access my GitHub repo?
+Applications may be authorized only for approved use, with least-privilege access, scoped repository permissions, and periodic review by organization administrators.Use cases examples include CI/CD and backups.
+
+## GitHub Apps
+We should be very selecitve about the apps that are approved at an Org level.
+
+This is the primary mechanism that we use to enable AWS Code Build/Pipeline tools to access GitHub events.
+
+<img width="1096" alt="image" src="https://github.com/user-attachments/assets/b3c46347-d978-4cdc-99d1-cbf949f0798d" />
 
 ## When should I create an Access Token?
-
 - Access tokens can be created to authorize a github client (as a login credential)
 - Access tokens can be used to authorize a script to perform git operations
 - Access tokens can be used to authorize a program to make GitHub api calls
 
 ## What type of access token should I use?
-
 Access token creation is configured under **Settings/Developer Settings/Personal Access Tokens**.
 
 If the creator of an access token is not a GitHub Organization owner, the token must be approved by a GitHub Organization Owner before it can be used.
@@ -165,16 +171,8 @@ An organization owner can revoke fine-graned tokens that have been granted organ
 - SSH keys
 - GitHub Apps
 
-## GitHub Apps
-
-We should be very selecitve about the apps that are approved at an Org level.
-
-This is the primary mechanism that we use to enable AWS Code Build/Pipeline tools to access GitHub events.
-
-<img width="1096" alt="image" src="https://github.com/user-attachments/assets/b3c46347-d978-4cdc-99d1-cbf949f0798d" />
-
-
 ## How can I access the GitHub api?
+[API Reference](https://docs.github.com/en/developers)
 
 ## Which GitHub api should I use?
 
@@ -182,19 +180,30 @@ Options
 - GraphQL
 - API
 
+CDL uses the Github API for Disaster Recovery to backup repositories to external storage areas.  
+
+
 ## Can we use GitHub Codespaces?
+CDL doesn't utilize these due to costs and alternative options such as Docker.
 
 ## Best Practices
 
 ### Developer Best Practices
 
+#### What collaboration settings are recommended for my new GitHub repo?
+Use protected default branches with required PR reviews, required passing checks, least-privilege permissions, and mandatory security scanning for all repositories.
+
+Each repository should have at least 1 admin assigned to it to manage access.
+
 ### GitHub Notifications Best Practices
+Github notifications can be quite noisy.  Some teams utilize Slack-Github integration for repositories they watch.  
 
 #### Forking CDL repositories
 
 #### Signed Commits
 
 ### Organization Admin Best Practices
+At least 2 members should be assigned as an organizational admin.  Create an admin account and assign it as an owner. You can use the + email trick to create a separate account for this.  (ex: johndoe+gh-adming@ucop.edu). This user can approve Github app connections, access tokens, manage members, and have access to all repositories in the organization.
 
 ### Product/Project Management Best Practices
 Most teams at CDL utilize Github Project Boards to manage agile development.  Project Boards are very flexible, supporting many views and configurations to track work across a single or multiple repositories. They are typically set to private since they track internal work.  Examples of public Github Project Boards can be found here: 
@@ -203,3 +212,6 @@ Most teams at CDL utilize Github Project Boards to manage agile development.  Pr
 
 ## How do our teams use CoPilot?  ###
 CDL Users that have Pro accounts via Github Education, were able to request Github CoPilot for free.  As of June 1, 2026 [Github transitioned CoPilot to usage-based billing](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/).  As a result of that, Github [paused signups for CoPilot](https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/).  Users which already have CoPilot can continue to use it until they reach their usage limit each month.  Teams find Github CoPilot beneficial utilizing within the browser, helping to write unit tests, review PRs, and embed within their IDE of choice. 
+
+## Github is a dynamic platform.  How can I stay up-to-date with changes?
+Read the [Github Blog](https://github.blog/) for news and updates and [subscribe to the Github Newsletter](https://github.com/newsletter/) for developer updates. 
