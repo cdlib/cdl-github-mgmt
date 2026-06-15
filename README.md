@@ -111,6 +111,11 @@ Most CDL users have been able to qualify for a free pro account using [GitHub fo
 
 ## What is a GitHub Organization?  How does CDL utilize GitHub Organizations?
 Github organizations are for teams operating shared code and policies. Each CDL program typically has it's own organization.  
+Examples:
+- [UC Curation Center](https://github.com/CDLUC3)
+- [PAD Archives](https://github.com/ucldc)
+- [PAD Publishing](https://github.com/eScholarship/)
+
 
 ## What is a Github Team?
 Within each organization there are teams. A GitHub team is a subgroup inside an organization used to manage repo-level access.  A member can belong to many teams.
