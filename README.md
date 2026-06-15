@@ -111,15 +111,20 @@ Most CDL users have been able to qualify for a free pro account using [GitHub fo
 
 ## What is a GitHub Organization?  How does CDL utilize GitHub Organizations?
 Github organizations are for teams operating shared code and policies. Each CDL program typically has it's own organization.  
+Examples:
+- [UC Curation Center](https://github.com/CDLUC3)
+- [PAD Archives](https://github.com/ucldc)
+- [PAD Publishing](https://github.com/eScholarship/)
+
 
 ## What is a Github Team?
 Within each organization there are teams. A GitHub team is a subgroup inside an organization used to manage repo-level access.  A member can belong to many teams.
 
 ## I need to create a new repo, which organization should I use?
-(Joe) I believe this is program dependent and by project right?
+If it is a repo that all of CDL would benefiit from, use CDLIB Organization, otherwise it probably works best in your program's organization or in cases with new projects/partnerships, create a new organization.
 
 ## I need to create a new repo, should it be public or private?
-(Joe) Wondering if this should be private by default and public when it needs to be public.
+Repositories should be private by default. Make a repository public only when there is a clear need for open source, open collaboration, or public documentation, and only after confirming that it contains no sensitive or internal process details/content.
 
 ## What content should *never* be stored it git (even in a private repo?)
 Secrets and credentials (API keys & tokens, passwords, private keys, connection strings)
@@ -214,4 +219,4 @@ Most teams at CDL utilize Github Project Boards to manage agile development.  Pr
 CDL Users that have Pro accounts via Github Education, were able to request Github CoPilot for free.  As of June 1, 2026 [Github transitioned CoPilot to usage-based billing](https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/).  As a result of that, Github [paused signups for CoPilot](https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/).  Users which already have CoPilot can continue to use it until they reach their usage limit each month.  Teams find Github CoPilot beneficial utilizing within the browser, helping to write unit tests, review PRs, and embed within their IDE of choice. 
 
 ## Github is a dynamic platform.  How can I stay up-to-date with changes?
-Read the [Github Blog](https://github.blog/) for news and updates and [subscribe to the Github Newsletter](https://github.com/newsletter/) for developer updates. 
+Read the [Github Blog](https://github.blog/) for news and updates and [subscribe to the Github Newsletter](https://github.com/newsletter/) for developer updates. [Github Status](https://www.githubstatus.com/) reports performance and issues with certain Github services. 
