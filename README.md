@@ -210,7 +210,7 @@ Most teams at CDL utilize Github Project Boards to manage agile development.  Pr
 - [CDLUC3 Public Projects](https://github.com/orgs/CDLUC3/projects)
 - [ROR Community Roadmap](https://github.com/orgs/ror-community/projects/17)
 
-## How do I obtain Github CoPilot ###
+## How do I obtain Github CoPilot? ###
 Github CoPilot via personal account Github Pro (Github Education benefit)
 A free subscription for GitHub Copilot is available to verified teachers with GitHub Education. See [Getting free access to Copilot as a student, teacher, or maintainer](https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-teachers-and-os-maintainers) 
 After you approved for Github Education, you can [access copilot for free](https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-teachers-and-os-maintainers#accessing-copilot-pro-for-free)
