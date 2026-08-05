@@ -5,7 +5,7 @@
 
 ## What GitHub Account Should I use for my work at CDL?
 
-GitHub accounts are stongly tied to individual emails.  
+GitHub accounts are strongly tied to individual emails.  
 
 The use of shared/administrative accounts in actively discouraged by GitHub through multi-factor authentication policies.
 
@@ -99,6 +99,7 @@ Host github.com
   - Can perform git operations (clone/push/pull)
   - Cannot perform GitHub API operations
 
+# Github Plans 
 ## What Type of Billing Plan should my GitHub account have?
 
 GitHub offers 3 types of plans
@@ -107,19 +108,23 @@ GitHub offers 3 types of plans
 - Enterprise
 
 Due to cost, CDL does not have an enterprise plan. 
-Most CDL users have been able to qualify for a free pro account using [GitHub for Education](https://github.com/education) benefits.
+Most CDL users have been able to qualify for a free pro account as a Teacher using [GitHub for Education](https://github.com/education) benefits.
 
 ## What is a GitHub Organization?  How does CDL utilize GitHub Organizations?
 Github organizations are for teams operating shared code and policies. Each CDL program typically has it's own organization.  
 
-## What is a Github Team?
-Within each organization there are teams. A GitHub team is a subgroup inside an organization used to manage repo-level access.  A member can belong to many teams.
+If you are the owner of an organization and have qualified for Teacher education benefits, you may [upgrade your Organization to a Github Team plan](https://education.github.com/globalcampus/teacher)
+
+## What are teams with Github?
+Within each organization there are teams. A GitHub team is a subgroup inside an organization used to manage repo-level access.  A member can belong to many teams.  (Example: https://github.com/orgs/CDLUC3/teams)
+
+**Note:** Team in Github are a different concept than the [Github Team billing plan](https://docs.github.com/en/get-started/learning-about-github/githubs-plans#github-team)
 
 ## I need to create a new repo, which organization should I use?
-(Joe) I believe this is program dependent and by project right?
+If your project or work would be useful for all of CDL, use the [CDLIB Organization](https://github.com/cdlib).  If it's specific to your program, it's recommended to use your program's Github organization. 
 
 ## I need to create a new repo, should it be public or private?
-(Joe) Wondering if this should be private by default and public when it needs to be public.
+You can change it later: If you are unsure, start with Private. You can easily switch it to Public later through the repository's Settings menu under the Danger Zone section. [Consequences of Changing Visibility](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility#consequences-of-changing-a-repositorys-visibility)
 
 ## What content should *never* be stored it git (even in a private repo?)
 Secrets and credentials (API keys & tokens, passwords, private keys, connection strings)
